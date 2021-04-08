@@ -19,28 +19,28 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     *  Increase the score for Team A by 3 points
+     * Increase the score for Team A by 3 points
      */
     public void addThreeForTeamA(View v) {
-        scoreTeamA = scoreTeamA + 3 ;
+        scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
 
     }
 
     /**
-     *  Increase the score for Team A by 2 points
+     * Increase the score for Team A by 2 points
      */
     public void addTwoForTeamA(View v) {
-        scoreTeamA = scoreTeamA + 2 ;
+        scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
 
     }
 
     /**
-     *  Increase the score for Team A by 1 points
+     * Increase the score for Team A by 1 points
      */
     public void addOneForTeamA(View v) {
-        scoreTeamA = scoreTeamA + 1 ;
+        scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
 
     }
@@ -52,29 +52,30 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
     /**
-     *  Increase the score for Team B by 3 points
+     * Increase the score for Team B by 3 points
      */
     public void addThreeForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 3 ;
+        scoreTeamB = scoreTeamB + 3;
         displayForTeamA(scoreTeamB);
 
     }
 
     /**
-     *  Increase the score for Team B by 2 points
+     * Increase the score for Team B by 2 points
      */
     public void addTwoForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 2 ;
+        scoreTeamB = scoreTeamB + 2;
         displayForTeamA(scoreTeamB);
 
     }
 
     /**
-     *  Increase the score for Team B by 1 points
+     * Increase the score for Team B by 1 points
      */
     public void addOneForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 1 ;
+        scoreTeamB = scoreTeamB + 1;
         displayForTeamA(scoreTeamB);
 
     }
@@ -86,4 +87,16 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
+    /**
+     * Resets the Scores to 0
+     */
+    public void resetScore(View v) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
+
 }
+
